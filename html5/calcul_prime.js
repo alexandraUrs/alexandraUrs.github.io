@@ -7,6 +7,11 @@ onmessage = function(e){
 		stopped = true;
 		
 	}
+	else
+		if (e.data == "stop")
+	     {
+		stopped = false;
+	     }
 }
 
 //--------------------------
@@ -22,8 +27,7 @@ function is_prim(n)
 //--------------------------
 function calculeaza_prime(start_value)
 {
-   if(stopped)
-   ;
+   if(stopped);
    else{
      for(var i = start_value; i < start_value+1000; i++)
 	   if (is_prim(i))
