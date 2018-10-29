@@ -1,8 +1,9 @@
 var stopped = false;
 
 
-onMessage = function(e){
-	if (e.data == "stop"){
+onmessage = function(e){
+	if (e.data == "stop")
+	{
 		stopped=true;
 		
 	}
@@ -30,9 +31,9 @@ function calculeaza_prime(start_value)
 	   start_value+=1000;	
    }
    if(start_value<1e10)
-   setTimeout(calculeaza_prime, 1, start_value);
+      setTimeout(calculeaza_prime, 1, start_value);
    else	
-   postMessage("gata");	
+      postMessage("gata");	
 }
  //--------------------------
  calculeaza_prime(1e9);
