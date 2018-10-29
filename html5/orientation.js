@@ -10,7 +10,7 @@ function on_device_orientation(e)
 	var vanvas = document.getElementById("id_canvas");
 	var context = cnvas.getContext("2d");
 	
-	context.clearRect(0, 0, canvas.width, canvas.height)
+	context.clearRect(0, 0, canvas.width, canvas.height);
 	var R=10;
 	context.beginPath();
 	context.rc(canvas.width /2 +e.gamma/90*(canvas.width/2 -R), 
