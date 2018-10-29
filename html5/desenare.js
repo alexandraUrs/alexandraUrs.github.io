@@ -33,7 +33,7 @@ function start()
 	document.getElementById("id_stop_button").disabled = false;
 	
 	var my_worker=new Worker("calcul_prime.js");
-	my_worker.onmessage = function(e){
+	my_worker.onMessage = function(e){
 	  document.getElementById("id_prime").innerHTML = e.data;	
 	} 
 	 
