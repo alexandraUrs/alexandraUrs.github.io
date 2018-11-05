@@ -9,7 +9,7 @@ function on_device_orientation(e)
 	document.getElementById("id_beta").innerHTML = e.beta;
 	document.getElementById("id_gamma").innerHTML = e.gamma;
 	
-	var vanvas = document.getElementById("id_canvas");
+	var canvas = document.getElementById("id_canvas");
 	var context = cnvas.getContext("2d");
 	
 	context.clearRect(0, 0, canvas.width, canvas.height);
