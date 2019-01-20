@@ -29,7 +29,8 @@ include "./includes/antet.php";
                   <table class="table table-user-information">
                    <thead>
                       <tr>
-                        <th>Poza:</th>	
+                        <th>VIDEO:</th>	
+						<th>POZA:</th>	
                       </tr>
 					  </thead>
 					  <tbody>
