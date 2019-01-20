@@ -1,8 +1,3 @@
-<?php
-include "./includes/head.php";
-include "./includes/antet.php";
-//include "./includes/meniu_lateral.php";
-?>
 
 <style>
 body {
@@ -79,35 +74,7 @@ form {
             </div>
 		
             <div class="panel-body">
-          
-                  <?php
-
-                       if (isset($_POST['submit'])) {
-						
-                            //daca s-a efectuat trimiterea formularului
-                            //actualizăm înregistrarea în baza de date
-                         $nume=$_POST['nume'];
-                         $prenume = $_POST['prenume'];
-					     $rp_medic = $_POST['rp_medic'];
-						 $rp_eliberata = $_POST['rp_eliberata'];
-						 
-						 $com = "INSERT INTO pacienti (nume,prenume,rp_medic,rp_eliberata)
-                                VALUES ('$nume','$prenume','$rp_medic','$rp_eliberata');";
-						 
-                         $result= mysql_query($com);
-					   
-						 if (!$result) {
-                            	echo mysql_error();
-                          } else {
-                             	echo "<h2>Adaugare efectuata cu succes!</h2>";
-                                echo "<p>Înapoi la <a href='proiect.php'>Proiect</a>";
-                            }
-					   
-					   }else{
-					  ?>		  
-			  			
-			  
-			  
+          	    
                         <form  action="proiect1.php" method="post">
                                 <div class="input-group">
                                     <label>Nume:</label>
@@ -119,11 +86,11 @@ form {
                                 </div>
                                 <div class="input-group">
                                     <label>Rp medic:</label>
-                                    <input type="text" name="rp_medic" id="rp_medic" value="" >
+                                    <button class="btn" type="submit" name="submit" >Poza</button>
                                 </div>
 								<div class="input-group">
                                     <label>Rp eliberata:</label>
-                                    <input type="text" name="rp_eliberata" id="rp_eliberata" value="" >
+                                    <button class="btn" type="submit" name="submit" >poza</button>
                                 </div>
                                 <div class="input-group">
                                   <button class="btn" type="submit" name="submit" >Submit</button>
@@ -133,14 +100,6 @@ form {
 	   <div class="panel-footer">
        </div>
 	   
-	    <?php
-
-                        }
-                        mysql_close($conectare);
-
-
-         ?>
-	   
     </div>
   </div>
  </div>	
@@ -149,8 +108,3 @@ form {
 
 
 
-
-<?php
-include "./includes/footer.php";
-
-?>
