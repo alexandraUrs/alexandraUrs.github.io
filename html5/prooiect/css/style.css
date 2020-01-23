@@ -1,11 +1,16 @@
+body{
+	background-color:#A0B98D;
+}
+
+
 #container{
 	width:900px;
 	min-height:700px;
-	background:#333;
+	background:#EBF7E3;
 	overflow:auto;
 	margin:60px auto;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	border:#660 solid 2px;
+	border:DarkGreen solid 5px;
 }
