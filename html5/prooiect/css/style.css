@@ -15,9 +15,9 @@ body{
 
 
 #container{
-	margin: 0 auto;
+	margin: 0auto;
 	width:900px;
-	min-height:700px;
+	min-height:800px;
 	background:#EBF7E3;
 	overflow:auto;
 	margin:60px auto;
@@ -25,4 +25,16 @@ body{
 	-webkit-border-radius:10px;
 	border-radius:10px;
 	border:DarkGreen solid 5px;
+
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+	.body{
+		width: 95%;
+	}
+	#container{
+	width:300px;
+	min-height:500px;
+	
 }
