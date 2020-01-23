@@ -4,10 +4,18 @@ body{
 	font-size:87,5%;
 	font-family: Arial, 'Lucida Sans Unicode';
 	line-height:1.5;
+	text-align: left;
+}
+
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
 }
 
 
 #container{
+	margin: 0 auto;
 	width:900px;
 	min-height:700px;
 	background:#EBF7E3;
