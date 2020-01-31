@@ -40,16 +40,36 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #699A47;
+}
+
+.button {
+  background-color: #b8b894;
+  border: none;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #EBF7E3;
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px)
 {
-	.body{
-		width: 95%;
-	}
-	#container{
+.body{
+	width: 95%;
+}
+	
+#container{
 	width:300px;
 	min-height:500px;
+}
 	
+.button{
+	font-size: 10px;
+	padding: 5px 5px;
+}
 }
