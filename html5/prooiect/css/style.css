@@ -15,7 +15,6 @@ body{
 
 
 #container{
-	margin: 0auto;
 	width:900px;
 	min-height:800px;
 	background:#EBF7E3;
@@ -26,6 +25,22 @@ body{
 	border-radius:10px;
 	border:DarkGreen solid 5px;
 
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px)
