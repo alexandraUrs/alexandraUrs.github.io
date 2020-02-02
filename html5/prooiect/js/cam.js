@@ -36,22 +36,18 @@ function myCanvas() {
 
 var myVideo = document.getElementById("id_video"); 
 
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
-
 function makeBig() { 
-    myVideo.width = 560; 
+    myVideo.width = 500; 
+	myVideo.height = 500 ;
 } 
 
 function makeSmall() { 
-    myVideo.width = 320; 
+    myVideo.width = 150;
+	myVideo.height = 150;	
 } 
 
 function makeNormal() { 
-    myVideo.width = 420; 
+    myVideo.width = 250; 
+	myVideo.height = 300;
 } 
 
