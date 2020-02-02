@@ -12,14 +12,23 @@
 <body>
 	<div id="container">
 		<h2>Pacient: Urs Alexandra</h2>
-		<button type = "button" id = "id_button"> Fa poza </button>
+		<div class="leftcolumn">
+			<h4>Reteta eliberata de medic:</h4>
+			
+			<img id="med" src="med.jpg" width="220" height="277">
+			<p><button  onclick="myCanvas()">Arata reteta</button></p>
+			<canvas id="myCanvas" width="250" height="300"
+			 style="border:1px solid black;">Canvas tag is not supported</canvas>
+			 
+		</div>
+		
+		<div class="rightcolumn">
+			<button type ="button" id = "id_button"> Start </button>
 
-		<video height = "400" width="400" autoplay controls id="id_video">Video tag is no supported</video>
-		<canvas height = "400" width = "400" id ="id_canvas">Canvas tag is not supported</canvas>
-
-		<script src="cam.js"></script>
-
+			<video height = "200" width="200" autoplay controls id="id_video">Video tag is no supported</video>
+			<canvas height = "200" width = "200" id ="id_canvas">Canvas tag is not supported</canvas>			
+        </div>
 	</div>
-
+	<script src="cam.js"></script>
 </body>
 </html>
