@@ -27,6 +27,7 @@ function on_touch(e)
 	context.drawImage(video, 0, 0);
 }
 
+//--------------------------------
 function myCanvas() {
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
@@ -34,6 +35,8 @@ function myCanvas() {
   ctx.drawImage(img,10,10);
 }
 
+
+//--------------------------------
 var myVideo = document.getElementById("id_video"); 
 
 function makeBig() { 
@@ -51,3 +54,12 @@ function makeNormal() {
 	myVideo.height = 300;
 } 
 
+
+
+//--------------------------
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
